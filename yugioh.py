@@ -4,7 +4,7 @@ import json
 
 @xlfunc
 def YGOPrice(s, n):
-	if not s || not n:
+	if (not s) or (not n):
 		return '-'
 	setVal = s + '-' + n
 	url = 'http://yugiohprices.com/api/price_for_print_tag/' + setVal
